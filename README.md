@@ -19,9 +19,9 @@ To build and develop the extension, follow these steps:
 $ git clone https://github.com/containers/podman-desktop-extension-minimal-template/
 ```
 
-2. Run `yarn install` to install all relevant packages:
+2. Run `npm install` to install all relevant packages:
 ```sh
-$ yarn install
+$ npm install
 ```
 
 3. Create a build:
@@ -29,12 +29,12 @@ $ yarn install
 Creating a build will generate all required files for Podman Desktop to load the extension:
 
 ```sh
-$ yarn build
+$ npm build
 ```
-Optionally, you can also use `yarn watch` to continuously rebuild after each change, without needing to re-run `yarn build`:
+Optionally, you can also use `npm watch` to continuously rebuild after each change, without needing to re-run `npm build`:
 
 ```sh
-$ yarn watch
+$ npm watch
 ```
 
 4. Load the extension temporarily within Podman Desktop:
@@ -51,16 +51,16 @@ Navigate to the directory:
 $ cd podman-desktop
 ```
 
-Run the `yarn install` command:
+Run the `npm install` command:
 
 ```sh
-$ yarn install
+$ npm install
 ```
 
-Load the extension using the `yarn watch` command with an additional parameter to load the `backend` packaged data:
+Load the extension using the `npm watch` command with an additional parameter to load the `backend` packaged data:
 
 ```sh
-yarn watch --extension-folder ../podman-desktop-extension-minimal-template
+npm watch --extension-folder ../podman-desktop-extension-minimal-template
 ```
 
 5. Confirm that the extension has been loaded:
