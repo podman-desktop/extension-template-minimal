@@ -16,7 +16,7 @@ To build and develop the extension, follow these steps:
 
 1. Clone the project or your fork:
 ```sh
-$ git clone https://github.com/containers/podman-desktop-extension-template/
+$ git clone https://github.com/containers/podman-desktop-extension-minimal-template/
 ```
 
 2. Run `yarn install` to install all relevant packages:
@@ -60,7 +60,7 @@ $ yarn install
 Load the extension using the `yarn watch` command with an additional parameter to load the `backend` packaged data:
 
 ```sh
-yarn watch --extension-folder ../podman-desktop-extension-template
+yarn watch --extension-folder ../podman-desktop-extension-minimal-template
 ```
 
 5. Confirm that the extension has been loaded:
