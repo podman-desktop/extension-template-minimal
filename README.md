@@ -29,12 +29,12 @@ $ npm install
 Creating a build will generate all required files for Podman Desktop to load the extension:
 
 ```sh
-$ npm build
+$ npm run build
 ```
-Optionally, you can also use `npm watch` to continuously rebuild after each change, without needing to re-run `npm build`:
+Optionally, you can also use `npm run watch` to continuously rebuild after each change, without needing to re-run `npm run build`:
 
 ```sh
-$ npm watch
+$ npm run watch
 ```
 
 4. Load the extension temporarily within Podman Desktop:
@@ -57,10 +57,10 @@ Run the `npm install` command:
 $ npm install
 ```
 
-Load the extension using the `npm watch` command with an additional parameter to load the `backend` packaged data:
+Load the extension using the `npm run watch` command with an additional parameter to load the `backend` packaged data:
 
 ```sh
-npm watch --extension-folder ../podman-desktop-extension-minimal-template
+npm run watch --extension-folder ../podman-desktop-extension-minimal-template
 ```
 
 5. Confirm that the extension has been loaded:
