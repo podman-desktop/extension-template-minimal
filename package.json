@@ -5,11 +5,12 @@
   "version": "0.0.1",
   "icon": "icon.png",
   "publisher": "you",
+  "type": "module",
   "license": "Apache-2.0",
   "engines": {
-    "podman-desktop": ">=1.10.0"
+    "podman-desktop": ">=1.12.0"
   },
-  "main": "./dist/extension.js",
+  "main": "dist/extension.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch"

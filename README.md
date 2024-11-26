@@ -79,18 +79,24 @@ More information on how to package and publish your extension can be found in ou
 
 However, we have provided a pre-made Containerfile in this template for you to try.
 
-1. Package your extension by building the image:
+1. Ensure that you have built your project:
+
+```sh
+$ npm run build
+```
+
+2. Package your extension by building the image:
 
 ```sh
 $ podman build -t quay.io/myusername/myextension .
 ```
 
-2. Push the extension to an external registry:
+3. Push the extension to an external registry:
 
 ```sh
 $ podman push quay.io/myusername/myextension
 ```
 
-3. Install via the Podman Desktop "Install Custom..." button:
+4. Install via the Podman Desktop "Install Custom..." button:
 
 ![custom install](/images/custom_install.png)

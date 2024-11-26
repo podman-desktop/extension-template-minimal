@@ -1,24 +1,17 @@
 {
   "compilerOptions": {
-    "strict":true,
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES2020",
+    "module": "CommonJS", // Since we are not using vite, we need to use CommonJS for Podman Desktop
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "lib": [
-      "ES2017",
-      "webworker",
-      "dom",
-    ],
+    "lib": ["ES2020", "webworker"],
     "sourceMap": true,
+    "rootDir": "src",
     "outDir": "dist",
-    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "types": [
-      "node",
-    ],
+    "types": ["node"],
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "src",
-  ],
+  "include": ["src"]
 }

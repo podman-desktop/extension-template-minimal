@@ -1,4 +1,3 @@
-import type { ExtensionContext } from '@podman-desktop/api';
 import * as extensionApi from '@podman-desktop/api';
 
 /**
@@ -7,7 +6,7 @@ import * as extensionApi from '@podman-desktop/api';
  */
 
 // Initialize the activation of the extension.
-export async function activate(extensionContext: ExtensionContext): Promise<void> {
+export async function activate(extensionContext: extensionApi.ExtensionContext): Promise<void> {
   console.log('starting hello world extension');
 
   // Create a dialog that says "Hello World" with the extensionApi on load
