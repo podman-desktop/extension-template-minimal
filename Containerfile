@@ -1,9 +1,8 @@
 FROM scratch as builder
-COPY packages/backend/dist/ /extension/dist
-COPY packages/backend/package.json /extension/
-COPY packages/backend/media/ /extension/media
+COPY dist/ /extension/dist
+COPY package.json /extension/
 COPY LICENSE /extension/
-COPY packages/backend/icon.png /extension/
+COPY icon.png /extension/
 COPY README.md /extension/
 
 FROM scratch
