@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
-    "strict":true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "lib": ["ES2020", "webworker"],
     "sourceMap": true,
+    "rootDir": "src",
     "outDir": "dist",
-    "types": [
-      "node",
-    ],
+    "skipLibCheck": true,
+    "types": ["node"],
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "src",
-  ],
+  "include": ["src"]
 }
