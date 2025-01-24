@@ -21,7 +21,7 @@ on: [pull_request]
 
 jobs:
   check:
-    name: check typescript compilation
+    name: build
     runs-on: ubuntu-24.04
     timeout-minutes: 40
     steps:
